@@ -94,45 +94,32 @@ body {
 }
 @media screen and (min-width: 1200px){
 .main{
-    gap:40em;
+gap:10em
 }
-
 .gallery{
-    width: 450px;
-    height: 68vh;
-   
-   
+    height: 70vh;
+    width:30vh;
 }
 .gallery--item{
-    width: 35em;
-    height: 30em;
-    margin-bottom: 5em;
+    margin: 5px;
+    width: 15em;
+    height: 10em;
 }
 .gallery--item_image{
-    width: 35rem;
-    height:25em;
-
-}
-.gallery--item_title{
-    font-size: 4em;
+    width: 15em;
+    height: 8em;
 }
 .detail_container{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    width: 200rem;
-    height: 200em;
+display: flex;
+align-items: center;
+width: 100em;
+height: 50em;
 }
 .detail_image{
-    width:90em ;
-    
+    width: 45em;
 }
 .container--detail_title{
-    font-size: 9em;
-    top:14em ;
-}
-.logo{
-    font-size: 5em;
-    margin-bottom: 6em;
+    font-size: 3.8em;
+    top: 10em;
 }
 }

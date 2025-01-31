@@ -8,6 +8,10 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+.word_logo{
+    position: absolute;
+    top: -5rem;
+}
 .main{
     display: flex;
     flex-direction: column;
@@ -17,6 +21,7 @@ body {
     display: block;
     width: 12rem;
     height: 5rem;
+    
 }
 .gallery--item{
     border: 3px solid black;
@@ -29,7 +34,10 @@ body {
 .gallery--item_title{
     display: block;
     justify-self: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    font-style: normal;
 }
 .gallery{
     list-style: none;
@@ -53,22 +61,35 @@ body {
 .container--detail_title{
    position: absolute; 
    font-size: 2em;
+   width:18ch;
+   display: inline-block;
    top: 7em;
    left: 4em;
+   font-family: airstream_nfregular;
+   font-style: italic;
+   font-weight: normal;
+   white-space:nowrap;
+    overflow: hidden;
+   text-overflow:ellipsis;
    background-color: blanchedalmond;
 }
 .logo{
+    display: in;
+    border: 3px solid;
+    font-family: lakeshore_brkregular;
     display: flex;
     justify-content: center;
     background-color: aqua;
-    font-size: 1em;
+    font-size:5rem;
     margin-bottom: 15px;
+    height: 8rem;
+    font-weight: bolder;
+    
 
 }
 @media screen and (min-width: 500px){
     .main {
         display: flex;
-        
        justify-content: center ;
         flex-direction: row-reverse;
         flex-wrap: nowrap;
@@ -116,10 +137,19 @@ width: 100em;
 height: 50em;
 }
 .detail_image{
-    width: 45em;
+    width: 50em;
 }
+
 .container--detail_title{
     font-size: 3.8em;
     top: 10em;
+    
+}
+.container--detail_title:hover {
+    font-family: airstream;
+    overflow: visible;
+    white-space: initial;
+    text-overflow: initial; 
+    
 }
 }

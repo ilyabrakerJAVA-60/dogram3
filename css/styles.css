@@ -150,15 +150,22 @@ max-width: 70em;
 .container--detail_title{
     border: 3px solid ;
     position: absolute;
-    font-size: 3.8em;
-    bottom: 0;
+    font-size: 4em;
+    
+    bottom: 1.2em;
+    width: 20ch;
+    max-height: 12ch;
+    overflow-y: auto;
+    
+    
    
     
 }
 .detail--item_title:hover {
     font-family: airstream;
-    overflow: visible;
     white-space: initial;
-    text-overflow: initial; 
+    text-overflow:ellipsis;
+    
+     
 }
 }

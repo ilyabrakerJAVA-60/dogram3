@@ -53,11 +53,12 @@ body {
     position: relative;
     border: 3px solid;
     width:20em ;
+    height: 18em;
    
 }
 .detail_image{
     width: 20em;
-    left: 7em;
+    position: absolute;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     
 }
@@ -118,7 +119,7 @@ body {
 }
 @media screen and (min-width: 1200px){
 .main{
-gap:10em
+gap:20em
 }
 .gallery{
     height: 70vh;
@@ -135,20 +136,25 @@ gap:10em
 }
 .detail_container{
 border: 3px solid;
-height: 45em;
-width: 100em;
+min-height: 45em;
+max-height: 60em;
+min-width:50em;
+max-width: 70em;
 
 
 }
 .detail_image{
+    position: absolute;
     width: 50em;
 }
 
 .container--detail_title{
     border: 3px solid ;
+    position: absolute;
     font-size: 3.8em;
-    top: 10em;
+    max-height:40px;
     bottom: 0;
+   
     
 }
 .container--detail_title:hover {

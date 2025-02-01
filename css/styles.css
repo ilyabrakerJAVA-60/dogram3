@@ -65,7 +65,7 @@ body {
     width: 18ch;
     position: absolute;
     font-size: 2rem;
-    font-family: Airstream;
+    font-family:airstream_nfregular;
     bottom: 1rem;
     left: 3rem;
     background-color: aliceblue;
@@ -162,10 +162,8 @@ max-width: 70em;
     
 }
 .detail--item_title:hover {
-    font-family: airstream;
+    font-family: airstream_nfregular;
     white-space: initial;
-    text-overflow:ellipsis;
-    
-     
+    text-overflow:ellipsis;    
 }
 }

@@ -51,7 +51,6 @@ body {
 }
 .detail_container{
     position: relative;
-    border: 3px solid;
     width:20em ;
     height: 18em;
    
@@ -135,7 +134,7 @@ gap:20em
     height: 8em;
 }
 .detail_container{
-border: 3px solid;
+
 min-height: 45em;
 max-height: 60em;
 min-width:50em;
@@ -152,12 +151,11 @@ max-width: 70em;
     border: 3px solid ;
     position: absolute;
     font-size: 3.8em;
-    max-height:40px;
     bottom: 0;
    
     
 }
-.container--detail_title:hover {
+.detail--item_title:hover {
     font-family: airstream;
     overflow: visible;
     white-space: initial;

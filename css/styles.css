@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .gallery--item_image{
     display: block;
@@ -38,6 +39,7 @@ body {
     font-weight: 600;
     font-family: 'Open Sans';
     font-style: normal;
+    
 }
 .gallery{
     list-style: none;
@@ -49,29 +51,31 @@ body {
 }
 .detail_container{
     position: relative;
-    height: 20em;
+    border: 3px solid;
+    width:20em ;
    
 }
 .detail_image{
-    position: absolute;
     width: 20em;
     left: 7em;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    
 }
 .container--detail_title{
-   position: absolute; 
-   font-size: 2em;
-   width:18ch;
-   display: inline-block;
-   top: 7em;
-   left: 4em;
-   font-family: airstream_nfregular;
-   font-style: italic;
-   font-weight: normal;
-   white-space:nowrap;
+    width: 18ch;
+    position: absolute;
+    font-size: 2rem;
+    font-family: Airstream;
+    bottom: 1rem;
+    left: 3rem;
+    background-color: aliceblue;
+    color: black;
+    white-space: nowrap;
     overflow: hidden;
-   text-overflow:ellipsis;
-   background-color: blanchedalmond;
+    text-overflow: ellipsis;
+    font-style: italic;
+   
+   
 }
 .logo{
     display: in;
@@ -96,13 +100,11 @@ body {
       }
 
     .gallery{
-        
         width: 60vh;
         height: 25em;
     }
     .detail_container{
-       
-        height: 30em;
+        height: 25em;
         width: 40em;
     }
     .detail_image{
@@ -111,6 +113,7 @@ body {
     }
     .container--detail_title{
         font-size:3em ;
+
 }
 }
 @media screen and (min-width: 1200px){
@@ -131,18 +134,21 @@ gap:10em
     height: 8em;
 }
 .detail_container{
-display: flex;
-align-items: center;
+border: 3px solid;
+height: 45em;
 width: 100em;
-height: 50em;
+
+
 }
 .detail_image{
     width: 50em;
 }
 
 .container--detail_title{
+    border: 3px solid ;
     font-size: 3.8em;
     top: 10em;
+    bottom: 0;
     
 }
 .container--detail_title:hover {
@@ -150,6 +156,5 @@ height: 50em;
     overflow: visible;
     white-space: initial;
     text-overflow: initial; 
-    
 }
 }

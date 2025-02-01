@@ -8,60 +8,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Docdogram</title>
 </head>
 <body>
   <header class="logo"><h2 class="word_logo">Dogram</h2></header>
   <div class="main">
-    <div class="detail_container">
-      <img src="images/a lot of german dogs.webp" alt="" class="detail_image">
+    <div class="detail_container" id="box_animate">
+      <img src="images/dog1.webp" alt="" class="detail_image">
       <div class="container--detail_title">
-      <span class="detail--item_title">Немецкая овчарка — одна из самых известных и популярных пород собак в мире. Она была выведена в Германии в конце 19 века с целью создания универсальной рабочей собаки. </span>
+      <span class="detail--item_title">Немецкая овчарка — умная, верная, смелая собака, отличный защитник и компаньон, идеально подходит для службы, тренировок и охраны. </span>
     </div>
     </div>
-  <ul class="gallery">
-      <li class="gallery--item">
+  <ul class="gallery" onclick="start()">
+      <li class="gallery--item" data-alt-text="images/dog1.webp" data-detailed-text="Немецкая овчарка — умная, верная, смелая собака, отличный защитник и компаньон, идеально подходит для службы, тренировок и охраны.">
               <img src="images/dog1.webp" alt="german dog" class="gallery--item_image">
               <span class="gallery--item_title">serious dog</span>
       </li>
-      <li class="gallery--item">
+      <li class="gallery--item" data-alt-text="images/dog2.webp" data-detailed-text="Питбуль — сильный, мускулистый, энергичный и верный пес. Обладает храбростью, но требует правильного воспитания и социализации.">
         <img src="images/dog2.webp" alt="german dog" class="gallery--item_image">
         <span class="gallery--item_title">serious dog</span>
 </li>
-<li class="gallery--item">
-    <img src="images/dog3.webp" alt="german dog" class="gallery--item_image">
+<li class="gallery--item" data-alt-text="images/dog3.png" data-detailed-text="Аргентинский дог — крупная, мускулистая и смелая собака. Отличается верностью, защитными инстинктами, нуждается в воспитании и активных тренировках.">
+    <img src="images/dog3.png" alt="german dog" class="gallery--item_image">
     <span class="gallery--item_title">serious dog</span>
 </li>
-<li class="gallery--item">
-<img src="images/dog4.webp" alt="german dog" class="gallery--item_image">
+<li class="gallery--item" data-alt-text="images/dog4.png" data-detailed-text="Бульбуль — компактная, умная и энергичная собака. Отличается лояльностью, игривым характером и нуждается в регулярных прогулках и воспитании.">
+<img src="images/dog4.png" alt="german dog" class="gallery--item_image">
 <span class="gallery--item_title">serious dog</span>
 </li>
-<li class="gallery--item">
+<li class="gallery--item" data-alt-text="images/dog5.webp" data-detailed-text="Американский питбуль — сильный, смелый и лояльный питомец. Требует строгого воспитания, социализации и активного общения с хозяином.">
 <img src="images/dog5.webp" alt="german dog" class="gallery--item_image">
 <span class="gallery--item_title">serious dog</span>
 </li>
-<li class="gallery--item">
+<li class="gallery--item" data-alt-text="images/dog6.webp"data-detailed-text="Лабрадор — дружелюбная, умная и активная собака. Отличается верностью, легко обучается, подходит для семьи и как служебный питомец.">
 <img src="images/dog6.webp" alt="german dog" class="gallery--item_image">
 <span class="gallery--item_title">serious dog</span>
 </li>
-<li class="gallery--item">
-<img src="images/dog7.webp" alt="german dog" class="gallery--item_image">
+<li class="gallery--item" data-alt-text="images/dog7.png"data-detailed-text="Американский ротвейлер — мощная, уверенная собака, защитник, лояльная к семье, требует строгого воспитания, социализации и регулярных физических нагрузок.">
+<img src="images/dog7.png" alt="german dog" class="gallery--item_image">
 <span class="gallery--item_title">serious dog</span>
 </li>
-<li class="gallery--item">
-<img src="images/dog8.webp" alt="german dog" class="gallery--item_image">
+<li class="gallery--item" data-alt-text="images/dog8.png" data-detailed-text="Американский каникорсо — мощная, смелая и защищающая собака. Отличается преданностью, высокой защитной интуицией, требует ранней социализации и строгого воспитания.">
+<img src="images/dog8.png" alt="german dog" class="gallery--item_image">
 <span class="gallery--item_title">serious dog</span>
 </li>
-<li class="gallery--item">
-<img src="images/dog9.webp" alt="german dog" class="gallery--item_image">
+<li class="gallery--item" data-alt-text="images/dog9.png" data-detailed-text="Американский доберман — умный, энергичный и лояльный защитник. Отличается храбростью, хорош для охраны, требует активных нагрузок и воспитания.">
+<img src="images/dog9.png" alt="german dog" class="gallery--item_image">
 <span class="gallery--item_title">serious dog</span>
 </li>
-<li class="gallery--item">
-<img src="images/dog10.webp" alt="german dog" class="gallery--item_image">
+<li class="gallery--item" data-alt-text="images/dog10.png" data-detailed-text="Староанглийский бульдог — мощный, смелый и лояльный питомец. Отличается спокойствием, но требует регулярных упражнений и хорошего воспитания.">
+<img src="images/dog10.png" alt="german dog" class="gallery--item_image">
 <span class="gallery--item_title">serious dog</span>
 </li>
 </ul>
 
 </div>
+<script src="src/script.js"></script>
 </body>
 </html>

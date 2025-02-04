@@ -7,6 +7,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    --gallery--item-width:12rem;
+    --gallery--item-height: 8rem;
+    --gallery-width: 25rem;
+    --gallery-height: 25rem;
+    --detail_container-width: 22rem;
+    --detail_container-height: 22rem;
+    --container--detail_title-font-size:2rem;
 }
 .word_logo{
     position: absolute;
@@ -20,14 +27,14 @@ body {
 }
 .gallery--item_image{
     display: block;
-    width: 12rem;
-    height: 5rem;
+    width: var(--gallery--item-width);
+    height: calc(var(--gallery--item-height) - 2.5rem) ;
     
 }
 .gallery--item{
     border: 3px solid black;
-    width: 12rem;
-    height: 8rem;
+    width: var(--gallery--item-width);
+    height: var(--gallery--item-height);
     background-color: aqua;
     overflow: hidden;
     border-radius: 50px;
@@ -43,23 +50,26 @@ body {
 }
 .gallery{
     list-style: none;
-    height: 40vh;
-    width: 30rem;
+    justify-content: center;
+    height: var(--gallery-height);
+    width: var(--gallery-width);
     overflow: auto;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    margin-top: 2rem;
 }
 .detail_container{
     position: relative;
-    width:20em ;
-    height: 18em;
+    width:var(--detail_container-width);
+    height: var(--detail_container-height)
    
 }
 .detail_image{
-    min-width: 20em;
-    max-width: 21em;
-    min-height: 18em;
-    max-height: 18em;
+    min-width:calc(var(--detail_container-width) - 1rem);
+    max-width: var(--detail_container-width);
+    min-height: calc(var(--detail_container-height) - 1rem);
+    max-height:var(--detail_container-height) ;
     position: absolute;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     
@@ -67,7 +77,7 @@ body {
 .container--detail_title{
     width: 18ch;
     position: absolute;
-    font-size: 2rem;
+    font-size: var(--container--detail_title-font-size);
     font-family:airstream_nfregular;
     bottom: 1rem;
     left: 3rem;
@@ -100,26 +110,27 @@ body {
        justify-content: center ;
         flex-direction: row-reverse;
         flex-wrap: nowrap;
+        gap: 10em;
       }
 
     .gallery{
-        width: 60vh;
-        height: 25em;
+        width: calc(var(--gallery-width) - 10rem);
+        height:calc(var(--gallery-height) + 2rem);
     }
     .detail_container{
-        height: 25em;
-        width: 40em;
+        height: calc(var(--detail_container-height) + 3rem);
+        width: calc(var(--detail_container-width) + 18rem);
     }
     .detail_image{
-        min-width: 35em;
-        max-width: 35em;
-        min-height: 25em;
-        max-height: 25em;
+        min-width:calc(var(--detail_container-width) + 13rem);
+        max-width:calc(var(--detail_container-width) + 13rem);
+        min-height:calc(var(--detail_container-height) + 3rem);
+        max-height: calc(var(--detail_container-height) + 3rem);
         
 
     }
     .container--detail_title{
-        font-size:3em ;
+        font-size:calc(var(--container--detail_title-font-size) + 1rem) ;
 
 }
 }
@@ -128,52 +139,49 @@ body {
 gap:20em
 }
 .gallery{
-    height: 70vh;
-    width:30vh;
+    height: calc(var(--gallery-height) + 30rem);
+    width: calc(var(--gallery-width) - 5rem)
 }
 .gallery--item{
     margin: 5px;
-    width: 15em;
-    height: 10em;
+    width: calc(var(--gallery--item-width) + 3rem);
+    height: calc(var(--gallery--item-height) + 2.5rem);
     cursor: pointer;
 }
 .gallery--item_image{
-    width: 15em;
-    height: 8em;
+    width:calc(var(--gallery--item-width) + 3rem);
+    height:var(--gallery--item-height);
 }
 .detail_container{
-
-min-height: 45em;
-max-height: 60em;
-min-width:50em;
-max-width: 70em;
-
-
+min-height:calc(var(--detail_container-height) + 23rem);
+max-height:calc(var(--detail_container-height) + 35rem);
+min-width:calc(var(--detail_container-width) + 28rem);
+max-width:calc(var(--detail_container-width) + 48rem);
 }
 .detail_image{
     position: absolute;
-    min-width: 50em;
-    min-height: 40em;
+    min-width: calc(var(--detail_container-width) + 23rem);
+    min-height:calc(var(--detail_container-height) + 20rem)
 }
 
 .container--detail_title{
     border: 3px solid ;
     position: absolute;
-    font-size: 4em;
-    
+    font-size: calc(var(--container--detail_title-font-size) + 2rem);
     bottom: 1.2em;
     width: 20ch;
     max-height: 12ch;
-    overflow-y: auto;  
+    overflow-y: auto;
+    text-overflow:ellipsis;   
 }
 .animation{
     animation: fadeIn;
     animation-duration: 2s;
    
 }
-.detail--item_title:hover {
+.container--detail_title:hover{
     font-family: airstream_nfregular;
     white-space: initial;
-    text-overflow:ellipsis;    
+       
 }
 }
